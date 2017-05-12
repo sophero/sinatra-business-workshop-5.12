@@ -1,21 +1,21 @@
 require 'sinatra'
 
 get '/' do
-	@class_1="active"
+	@home="active"
 	erb :home
 end
 
 get '/about' do
-	@class_2="active"
+	@about="active"
 	erb :about
 end
 
 get '/activities' do
-	@class_3="active"
+	@activities="active"
 	erb :activities
 end
 
 get '/contact' do
-	@class_4="active"
+	@contact="active"
 	erb :contact
 end
