@@ -1,21 +1,28 @@
-<!-- # views/layout.erb -->
+
+<!DOCTYPE html>
 <html>
-  <head>
-    <title>My Page</title>
-  </head>
-  <body>
-    <div id='header'>
-      <nav>
-        <ul>
-          <li><a href="/home">Home</a></li>
-          <li><a href="/contact">Contact</a></li>
-          <li><a href="/gallery">Activities</a></li>
-          <li>Activities</li>
-        </ul>
-      </nav>
-    </div>
-    <div id='main'>
-      <%= yield %>
-    </div>
-  </body>
+<head>
+	<link rel="stylesheet" type="text/css" href="/css/styles.css">
+</head>
+<body>
+	<h1>My website</h1>
+	<nav>
+	  <ul>
+	    <li><a href="/">Home</a></li>
+	    <li><a href="/about">About</a></li>
+	    <li><a href="/activities">Activities</a></li>
+	    <li><a href="/contact">Contact</a></li>
+	  </ul>
+	</nav>
+
+	<div class="main-container">
+	  <%=yield %>
+	</div>
+
+	<footer>
+		<div class="footer"></div>
+	</footer>
+
+</body>
+
 </html>
