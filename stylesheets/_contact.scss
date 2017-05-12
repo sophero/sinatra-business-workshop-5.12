@@ -1,9 +1,22 @@
 .contact-form__container {
+	margin: 20px auto;
+	padding: 20px;
 	width: 100%;
 	height: 600px;
 	background-image: url('/assets/images/pocono-biking-large.jpg');
 	background-size: cover;
 	text-align: center;
+}
+
+.contact-form__overlay {
+	width: 500px;
+	margin: 0 auto;
+	padding: 20px;
+	background-color: rgba(0, 0, 0, 0.3);
+}
+
+.contact-form__get-in-contact-msg {
+	margin: 5px 20px 15px 20px;
 }
 
 .contact-form__input {
