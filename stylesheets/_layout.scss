@@ -14,8 +14,10 @@
   float: right;
   margin-left: $nav-item-margin;
   display: inline;
+
   a {
     text-decoration: none;
+    color: $default-link-color;
     &:hover {
       background-color: $nav-hover-color;
       color: $font-color;
@@ -45,7 +47,7 @@
   .hamburger{
     display: inline;
     float: right;
-    height: $hamburger-height;
-    width: $hamburger-width;
+    max-height: $hamburger-height;
+    max-width: $hamburger-width;
   }
 }
