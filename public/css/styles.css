@@ -1,4 +1,8 @@
 * {
   box-sizing: border-box; }
 
+.active {
+  background-color: black;
+  color: white; }
+
 /*# sourceMappingURL=styles.css.map */
