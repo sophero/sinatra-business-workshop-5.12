@@ -32,7 +32,9 @@
     display: none; }
 
   .hamburger {
-    display: block;
-    float: right; } }
+    display: inline;
+    float: right;
+    height: 10%;
+    width: 10%; } }
 
 /*# sourceMappingURL=styles.css.map */

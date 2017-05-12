@@ -43,7 +43,9 @@
     display: none;
   }
   .hamburger{
-    display: block;
+    display: inline;
     float: right;
+    height: $hamburger-height;
+    width: $hamburger-width;
   }
 }
