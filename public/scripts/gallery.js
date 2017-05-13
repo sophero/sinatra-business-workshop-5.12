@@ -1,8 +1,16 @@
 var galleryOne = document.getElementById("gallery1");
 var galleryTwo = document.getElementById("gallery2");
 var galleryThree = document.getElementById("gallery3");
+var galleryModal = document.getElementById("galleryDiv");
 
+galleryOne.addEventListener("click", lightbox);
+galleryTwo.addEventListener("click", lightbox);
+galleryThree.addEventListener("click", lightbox);
 
+function lightbox() {
+	galleryModal.style.display = "block";
+	galleryModal.style.backgroundImage = "url('" + wissihickon.fileName + "')";
+}
 
 function Image(fileName, caption) {
 	this.fileName = fileName;
