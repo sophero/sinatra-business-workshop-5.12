@@ -2,7 +2,7 @@ var hike = new Image("hiking.jpg");
 var bike = new Image("biking.jpg");
 var kayak = new Image("kayak.jpg");
 
-var homeCarousel = new Carousel([hike, bike, kayak]);
+var homeCarousel = new Carousel([kayak, bike, hike]);
 
 function Image(filename) {
 	this.filename = filename;
