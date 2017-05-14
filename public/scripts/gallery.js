@@ -1,8 +1,6 @@
 // ----------DOM Variables----------
 
-var galleryOne = document.getElementById("gallery1");
-var galleryTwo = document.getElementById("gallery2");
-var galleryThree = document.getElementById("gallery3");
+var gallery = document.getElementsByClassName("gallery");
 var modalContainer = document.getElementById("modal-container");
 var galleryModal = document.getElementById("galleryDiv");
 var currentPhoto = 0;
@@ -10,24 +8,27 @@ var currentGallery = 0;
 
 // ----------Event Handlers----------
 
-galleryOne.addEventListener("click", galleryDisplay);
-galleryTwo.addEventListener("click", galleryDisplay);
-galleryThree.addEventListener("click", galleryDisplay);
+galleryModal.addEventListener("click", gallery);
 
-galleryModal.addEventListener("click", gallery)
+for (let i=0; i < gallery.length; i++) {
+	gallery[i].addEventListener("click", function() {
+	galleryDisplay(i);
+	});
+};
 
 // ----------Event Handler Methods----------
 
-function galleryDisplay() {
+function galleryDisplay(i) {
 	modalContainer.style.display = "block";
-	galleryModal.style.backgroundImage = "url('" + masterGallery.gallery[currentGallery].album[currentPhoto].fileName + "')";
+	galleryModal.style.backgroundImage = "url('" + masterGallery.gallery[i].album[currentPhoto].fileName + "')";
 }
 
 function gallery() {
-	if (currentPhoto === masterGallery.gallery[currentGallery].album.length -1) {
+	if (currentPhoto === masterGallery.gallery[i].album.length -1) {
 		currentPhoto = 0
 		galleryDisplay()
 	}
+	
 	else {
 		currentPhoto += 1
 		galleryDisplay()
@@ -60,12 +61,6 @@ function addPhoto(photo) {
 function addGallery(gallery) {
 	this.gallery.push(gallery);
 }
-
-// function albumList() {
-// 	for (var i=0; i < this.album.length; i++) {
-// 		console.log("Photo " + i + ": " + this.album[i].fileName);
-// 	}
-// }
 
 // ----------Image Object Instances----------
 
