@@ -1,0 +1,30 @@
+.home-carousel__container {
+	margin: 20px auto;
+	width: 90vw;
+	height: 400px;
+}
+
+.home-carousel__active-image {
+	width: 100%;
+	height: 100%;
+	position: relative;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+
+.home-carousel__right-arrow {
+	width: $home-carousel__arrow-size;
+	height: $home-carousel__arrow-size;
+	background-image: url('/assets/images/arrow.png');
+	background-position: center;
+	background-size: contain;
+}
+
+.home-carousel__left-arrow {
+	width: $home-carousel__arrow-size;
+	height: $home-carousel__arrow-size;
+	background-image: url('/assets/images/back_arrow.png');
+	background-position: center;
+	background-size: contain;
+}
