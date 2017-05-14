@@ -1,6 +1,7 @@
 .home-carousel__container {
 	margin: 20px auto;
 	width: 90%;
+	max-width: 800px;
 	height: 400px;
 }
 
@@ -9,17 +10,23 @@
 	height: 100%;
 	position: relative;
 	background-repeat: no-repeat;
+	background-position: center;
 	background-size: cover;
 }
 
 .home-carousel__arrow {
 	position: absolute;
 	top: 50%;
-	transform: translate(0, -50%);
 	width: $home-carousel__arrow-size;
 	height: $home-carousel__arrow-size;
 	background-position: center;
 	background-size: contain;
+	transform: translate(0, -50%);
+	transition: all 0.15s ease-out;
+
+	&:hover {
+		transform: scale(1.5, 1.5) translate(0, -25%);
+	}
 }
 
 .home-carousel__arrow-right {
