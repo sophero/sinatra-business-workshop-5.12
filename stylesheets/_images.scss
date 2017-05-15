@@ -44,10 +44,8 @@
 
 // -------Media Queries-------
 
-@media all and (min-width: 360px) and (max-width:680px) {
-	.caption {
-		font-size: 0.8em;
-	}
+@media all and (min-width: 360px) and (max-width:500px) {
+	
 	.activity-container {
 		display: block;
 	}
@@ -64,8 +62,6 @@
 		font-size: 0.8em;
 	}
 }
-
-
 
 
 
