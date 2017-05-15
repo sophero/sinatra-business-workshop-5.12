@@ -1,5 +1,8 @@
 var hamburgerIcon=document.getElementsByClassName('hamburger')[0];
-var navItem=document.getElementsByClassName('nav-item')
+var navItem=document.getElementsByClassName('nav-item');
+var navBar=document.getElementsByClassName('nav-bar')[0];
+var footer=document.getElementsByClassName('footer')[0];
+var mainContent=document.getElementsByClassName('main-container')[0];
 
 hamburgerIcon.addEventListener("click", toggleMenu);
 
@@ -14,13 +17,22 @@ function toggleMenu() {
 function hideMenu() {
 	for (var i=0; i<navItem.length; i++){
 	    navItem[i].style.display="none";
+			navItem[i].style.float="right";
 	}
+	navBar.classList.remove('hamburger-show-menu');
+	footer.classList.remove('hamburger-move-content');
+	mainContent.classList.remove('hamburger-move-content');
 }
 
 function showMenu(){
 	for (var i=0; i<navItem.length; i++){
 		navItem[i].style.display="block";
+		navItem[i].style.float="none";
 	}
+	navBar.classList.add('hamburger-show-menu');
+	footer.classList.add('hamburger-move-content');
+	mainContent.classList.add('hamburger-move-content');
+
 }
 
 window.addEventListener("resize", function() {
