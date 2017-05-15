@@ -39,6 +39,9 @@
   top: 10%;
   float: none;
   text-align: right;
+  .nav-item{
+    float:none;
+  }
 }
 .hamburger-show-nav-item{
   display: block;
