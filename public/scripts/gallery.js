@@ -84,11 +84,21 @@ var tinman = new Image("assets/images/hiking/tinman.jpg", "The TinMan and friend
 var wonderland = new Image("assets/images/hiking/wonderland.jpg", "The stone walls inside Wissihickon harken hikers to a time long forgotten on the Forbidden Drive.");
 // -----Biking Gallery-----
 
-var fairmountCycling = new Image("assets/images/biking/cycling.jpg");
+var fairmountCycling = new Image("assets/images/biking/cycling.jpg", "Fairmount Park is the starting point of almost every bike trek a Philadelphian takes.");
+var circuitTrails = new Image("assets/images/biking/circuit_trails.jpg", "The circuit trails is a system of trails that connects the city in all directions. It extends beyond Philadelphia as well, connecting Chester, Montgomery, Delaware, and Bucks County as well.");
+var fairmountSampler = new Image("assets/images/biking/fairmount_sampler.jpg", "The sampler explores Wissihickon and the Belmont Plateau, giving riders a solid 30-40 miles of trail riding on single track terrain.");
+var forbiddenDrive = new Image("assets/images/biking/forbidden_drive.jpg", "Forbidden Drive is the main thoroughfare through Wissihickon and an excellent stretch of pavement to explore one of Philadelphia's best parks.");
+var indego = new Image("assets/images/biking/indego.jpg", "If you find yourself in the central zone without a ride, hop on a blue bike and explore.");
+var schuylkillTrail = new Image("assets/images/biking/schuykill_trail.jpg", "This is an excellent day ride.  It connects several park systems and towns together and once complete will span 130 miles in length.");
 
 // -----Kayaking Gallery-----
 
 var pineBarrens = new Image("assets/images/kayaking/PineBarrens.jpg")
+var cityViews = new Image("assets/images/kayaking/city_views.jpg")
+var benFranklin = new Image("assets/images/kayaking/ben_franklin.jpg")
+var hiddenSchuylkill = new Image("assets/images/kayaking/hidden_schuylkill.jpg")
+var relaxedRide = new Image("assets/images/kayaking/relaxed_ride.jpg")
+var whitewater = new Image("assets/images/kayaking/whitewater.jpg")
 
 // ----------Gallery Object Instances----------
 
@@ -108,10 +118,20 @@ hiking.addPhoto(coveredBridge);
 // -----Biking Photo Push-----
 
 biking.addPhoto(fairmountCycling);
+biking.addPhoto(circuitTrails);
+biking.addPhoto(fairmountSampler);
+biking.addPhoto(forbiddenDrive);
+biking.addPhoto(indego);
+biking.addPhoto(schuylkillTrail);
 
 // -----Kayaking Photo Push-----
 
+kayaking.addPhoto(benFranklin);
 kayaking.addPhoto(pineBarrens);
+kayaking.addPhoto(cityViews);
+kayaking.addPhoto(relaxedRide);
+kayaking.addPhoto(whitewater);
+kayaking.addPhoto(hiddenSchuylkill);
 
 // -----Gallery Push-----
 
