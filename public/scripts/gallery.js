@@ -61,12 +61,6 @@ function addGallery(gallery) {
 	this.gallery.push(gallery);
 }
 
-// function albumList() {
-// 	for (var i=0; i < this.album.length; i++) {
-// 		console.log("Photo " + i + ": " + this.album[i].fileName);
-// 	}
-// }
-
 // ----------Image Object Instances----------
 
 // -----Hiking Gallery-----
@@ -108,7 +102,7 @@ biking.addPhoto(fairmountCycling);
 
 kayaking.addPhoto(pineBarrens);
 
-// -----Gally Push-----
+// -----Gallery Push-----
 
 masterGallery.addGallery(hiking);
 masterGallery.addGallery(biking);
