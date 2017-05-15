@@ -24,3 +24,27 @@
     }
   }
 }
+.hamburger-move-content{
+  margin: 0;
+  right:25%;
+  position: fixed;
+  top: 10%;
+}
+.hamburger-show-menu{
+  margin: 0;
+  padding: 0;
+  width: 25%;
+  position: fixed;
+  height: 100%;
+  overflow: auto;
+  right: 0;
+  top: 10%;
+  float: none;
+  text-align: right;
+  .nav-item{
+    float:none;
+  }
+}
+.hamburger-show-nav-item{
+  display: block;
+}

@@ -26,7 +26,9 @@ post '/email-form' do
 	email_from= params[:email]
 	subject_to_send=params[:subject]
 	content_of_email=params[:message]
-	from = Email.new(email: email_from)
+	sender_name=params[:name]
+
+	from = Email.new(email: email_from, name:sender_name)
 	to = Email.new(email: 'Joshua@reyoumassage.com')
 	subject = subject_to_send
 	content = Content.new(type: 'text/plain', value: content_of_email)
