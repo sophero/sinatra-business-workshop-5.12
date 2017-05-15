@@ -4,7 +4,9 @@ var galleryOne = document.getElementById("gallery1");
 var galleryTwo = document.getElementById("gallery2");
 var galleryThree = document.getElementById("gallery3");
 var modalContainer = document.getElementById("modal-container");
+var caption = document.getElementById("caption");
 var galleryModal = document.getElementById("galleryDiv");
+var blur = document.getElementById("blur");
 var currentPhoto = 0;
 var currentGallery = 0;
 
@@ -14,13 +16,16 @@ galleryOne.addEventListener("click", galleryDisplay);
 galleryTwo.addEventListener("click", galleryDisplay);
 galleryThree.addEventListener("click", galleryDisplay);
 
-galleryModal.addEventListener("click", gallery)
+galleryModal.addEventListener("click", gallery);
+blur.addEventListener("click", closeGallery);
 
 // ----------Event Handler Methods----------
 
 function galleryDisplay() {
 	modalContainer.style.display = "block";
+	blur.style.display = "block";
 	galleryModal.style.backgroundImage = "url('" + masterGallery.gallery[currentGallery].album[currentPhoto].fileName + "')";
+	caption.innerHTML = masterGallery.gallery[currentGallery].album[currentPhoto].caption;
 }
 
 function gallery() {
@@ -32,6 +37,12 @@ function gallery() {
 		currentPhoto += 1
 		galleryDisplay()
 	}
+}
+
+function closeGallery() {
+	blur.style.display = "none";
+	modalContainer.style.display = "none";
+	currentPhoto = 0;
 }
 
 // ----------Object Constructors----------
@@ -65,12 +76,12 @@ function addGallery(gallery) {
 
 // -----Hiking Gallery-----
 
-var wissihickon = new Image("assets/images/hiking/Wissihickon.jpg");
-var coveredBridge = new Image("assets/images/hiking/covered_bridge.jpg");
-var fairmount = new Image("assets/images/hiking/fairmount.jpg");
-var kellyDrive = new Image("assets/images/hiking/kelly_drive.jpg");
-var tinman = new Image("assets/images/hiking/tinman.jpg");
-var wonderland = new Image("assets/images/hiking/wonderland.jpg");
+var wissihickon = new Image("assets/images/hiking/Wissihickon.jpg", "This hundred year old statue overlooks Wissihickon at it's highest point.  Take the Orange trail and look up. He is hard to miss.");
+var coveredBridge = new Image("assets/images/hiking/covered_bridge.jpg", "Pennsylvania is well known for it's many covered bridges, which date to the nineteenth century.  There are a few excellent examples of the style off Forbidden Drive in Chestnut Hill.");
+var fairmount = new Image("assets/images/hiking/fairmount.jpg", "Leaves of Grass");
+var kellyDrive = new Image("assets/images/hiking/kelly_drive.jpg", "Fairmount Park stretches through Philadelphia for over a dozen miles, bisected by the banks of the River Schuylkill.");
+var tinman = new Image("assets/images/hiking/tinman.jpg", "The TinMan and friends look over Valley Forge.");
+var wonderland = new Image("assets/images/hiking/wonderland.jpg", "The stone walls inside Wissihickon harken hikers to a time long forgotten on the Forbidden Drive.");
 // -----Biking Gallery-----
 
 var fairmountCycling = new Image("assets/images/biking/cycling.jpg");
