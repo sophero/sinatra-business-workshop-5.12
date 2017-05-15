@@ -40,7 +40,7 @@
   position: fixed;
   height: 100%;
   overflow: auto;
-  right: 0;
+  right: 5px;
   float: none;
   text-align: right;
   .nav-bar{
@@ -52,6 +52,8 @@
   }
   .nav-item{
     float:none;
+    margin-top: $vertical-menu-top-margin;
+    font-size: 1.5rem;
   }
 }
 
