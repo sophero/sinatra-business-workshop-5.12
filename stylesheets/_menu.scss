@@ -26,26 +26,14 @@
 }
 .hamburger-move-content{
   animation: maincontent 2s;
-  margin: 0;
-  right:25%;
-  position: fixed;
-  top: 60px;
+  animation-fill-mode: forwards;
 
 }
 
 .hamburger-show-menu{
 
 animation:menu 2s;
-
-margin: 0;
-   padding: 0;
-   width: 25%;
-   position: fixed;
-   height: 100%;
-   overflow: auto;
-   right: 5px;
-   float: none;
-   text-align: right;
+animation-fill-mode: forwards;
 
 
   .nav-total{
