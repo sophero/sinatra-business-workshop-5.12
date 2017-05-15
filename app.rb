@@ -23,10 +23,13 @@ get '/contact' do
 end
 
 post '/email-form' do
-	from = Email.new(email: 'test@example.com')
-	to = Email.new(email: 'test@example.com')
-	subject = 'Sending with SendGrid is Fun'
-	content = Content.new(type: 'text/plain', value: 'and easy to do anywhere, even with Ruby')
+	email_from= params[:email]
+	subject_to_send=params[:subject]
+	content_of_email=params[:message]
+	from = Email.new(email: email_from)
+	to = Email.new(email: 'Joshua@reyoumassage.com')
+	subject = subject_to_send
+	content = Content.new(type: 'text/plain', value: content_of_email)
 	mail = Mail.new(from, subject, to, content)
 
 	sg = SendGrid::API.new(api_key: ENV['SENDGRID_API_KEY'])
