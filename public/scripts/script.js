@@ -40,6 +40,8 @@ window.addEventListener("resize", function() {
 	if (width > 480) {
 		showMenu("inline");
 		navBar.classList.remove('hamburger-show-menu');
+		footer.classList.remove('hamburger-move-content');
+		mainContent.classList.remove('hamburger-move-content');
 	} else {
 		hideMenu();
 	}
