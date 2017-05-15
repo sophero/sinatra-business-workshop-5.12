@@ -21,9 +21,23 @@
 	border: 3px solid white;
 	border-radius: 10px;
 	margin: 0 auto;
+	background-size: cover;
+	background-position: bottom;
 }
 
 .activity-text {
 	font-size: 1.1em;
 	text-align: left;
+}
+
+.gallery1 {
+	background-image: url('/assets/images/hiking/Wissihickon.jpg');
+}
+
+.gallery2 {
+	background-image: url('/assets/images/biking/cycling.jpg');
+}
+
+.gallery3 {
+	background-image: url('/assets/images/kayaking/ben_franklin.jpg');
 }

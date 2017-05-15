@@ -12,9 +12,18 @@ var currentGallery = 0;
 
 // ----------Event Handlers----------
 
-galleryOne.addEventListener("click", galleryDisplay);
-galleryTwo.addEventListener("click", galleryDisplay);
-galleryThree.addEventListener("click", galleryDisplay);
+galleryOne.addEventListener("click", function() {
+	currentGallery = 0;
+	galleryDisplay();	
+});
+galleryTwo.addEventListener("click", function() {
+	currentGallery = 1;
+	galleryDisplay();
+});
+galleryThree.addEventListener("click", function() {
+	currentGallery = 2;
+	galleryDisplay();
+});
 
 galleryModal.addEventListener("click", gallery);
 blur.addEventListener("click", closeGallery);
@@ -94,7 +103,7 @@ var schuylkillTrail = new Image("assets/images/biking/schuykill_trail.jpg", "Thi
 // -----Kayaking Gallery-----
 
 var pineBarrens = new Image("assets/images/kayaking/PineBarrens.jpg")
-var cityViews = new Image("assets/images/kayaking/city_views.jpg")
+var cityViews = new Image("assets/images/kayaking/city_view.jpg")
 var benFranklin = new Image("assets/images/kayaking/ben_franklin.jpg")
 var hiddenSchuylkill = new Image("assets/images/kayaking/hidden_schuylkill.jpg")
 var relaxedRide = new Image("assets/images/kayaking/relaxed_ride.jpg")
