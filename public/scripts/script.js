@@ -14,7 +14,7 @@ function toggleMenu() {
 function hideMenu() {
 	for (var i=0; i<navItem.length; i++){
 	    navItem[i].style.display="none";
-	}	
+	}
 }
 
 function showMenu(){
