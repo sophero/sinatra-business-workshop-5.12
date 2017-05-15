@@ -1,29 +1,4 @@
-.active{
-  background-color: $active-color;
-  color: $font-color;
-}
-.nav-bar{
-  list-style-type: none;
-   margin: 0;
-   padding: 0;
-}
-.hamburger{
-  display: none;
-}
-.nav-item{
-  float: right;
-  margin-left: $nav-item-margin;
-  display: inline;
 
-  a {
-    text-decoration: none;
-    color: $default-link-color;
-    &:hover {
-      background-color: $nav-hover-color;
-      color: $font-color;
-    }
-  }
-}
 /* Extra Wide Desktops*/
 @media all and (min-width: 1200px) {
 
