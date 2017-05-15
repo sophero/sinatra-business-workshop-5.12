@@ -32,6 +32,7 @@
 }
 
 .hamburger-show-menu{
+
   .nav-total{
   height: 42.5px;}
   margin: 0;
@@ -43,13 +44,16 @@
   right: 5px;
   float: none;
   text-align: right;
+  
   .nav-bar{
     top: 10%;
   }
+
   .hamburger{
     max-width: 40%;
     max-height: 20%;
   }
+
   .nav-item{
     float:none;
     margin-top: $vertical-menu-top-margin;
