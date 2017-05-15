@@ -16,7 +16,8 @@ galleryOne.addEventListener("click", galleryDisplay);
 galleryTwo.addEventListener("click", galleryDisplay);
 galleryThree.addEventListener("click", galleryDisplay);
 
-galleryModal.addEventListener("click", gallery)
+galleryModal.addEventListener("click", gallery);
+blur.addEventListener("click", closeGallery);
 
 // ----------Event Handler Methods----------
 
@@ -36,6 +37,12 @@ function gallery() {
 		currentPhoto += 1
 		galleryDisplay()
 	}
+}
+
+function closeGallery() {
+	blur.style.display = "none";
+	modalContainer.style.display = "none";
+	currentPhoto = 0;
 }
 
 // ----------Object Constructors----------
