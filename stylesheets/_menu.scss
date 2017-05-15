@@ -28,9 +28,12 @@
   margin: 0;
   right:25%;
   position: fixed;
-  top: 10%;
+  top: 60px;
 }
+
 .hamburger-show-menu{
+  .nav-total{
+  height: 42.5px;}
   margin: 0;
   padding: 0;
   width: 25%;
@@ -38,13 +41,21 @@
   height: 100%;
   overflow: auto;
   right: 0;
-  top: 10%;
   float: none;
   text-align: right;
+  .nav-bar{
+    top: 10%;
+  }
+  .hamburger{
+    max-width: 40%;
+    max-height: 20%;
+  }
   .nav-item{
     float:none;
   }
 }
+
+
 .hamburger-show-nav-item{
   display: block;
 }
