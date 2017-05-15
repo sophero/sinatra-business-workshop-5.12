@@ -41,3 +41,41 @@
 .gallery3 {
 	background-image: url('/assets/images/kayaking/ben_franklin.jpg');
 }
+
+// -------Media Queries-------
+
+@media all and (min-width: 360px) and (max-width:680px) {
+	.caption {
+		font-size: 0.8em;
+	}
+	.activity-container {
+		display: block;
+	}
+	.container-right {
+		width: 100%;
+		margin: 0 auto;
+	}
+	.container-left {
+		width: 100%;
+		margin: 0 auto;
+	}
+	.activity-text {
+		text-align: center;
+		font-size: 0.8em;
+	}
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
