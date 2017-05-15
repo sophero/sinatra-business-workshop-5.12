@@ -1,11 +1,12 @@
-var hike = new Image("hiking.jpg");
-var bike = new Image("biking.jpg");
-var kayak = new Image("kayak.jpg");
+var hike = new Image("hiking.jpg", "Hiking");
+var bike = new Image("biking.jpg", "Biking");
+var kayak = new Image("kayak.jpg", "Kayaking");
 
 var homeCarousel = new Carousel([kayak, bike, hike]);
 
-function Image(filename) {
+function Image(filename, caption) {
 	this.filename = filename;
+	this.caption = caption;
 	var imageDir = "/assets/images/home-carousel/";
 	this.url = imageDir + filename;
 }
@@ -18,6 +19,7 @@ function Carousel(imageArray) {
 	var activeImage = document.getElementsByClassName('home-carousel__active-image')[0];
 	var leftArrow = document.getElementsByClassName('home-carousel__arrow-left')[0];
 	var rightArrow = document.getElementsByClassName('home-carousel__arrow-right')[0];
+	var caption = document.getElementsByClassName('home-carousel__caption')[0];
 	var tileNav = document.getElementsByClassName('home-carousel__tile-nav')[0];
 
 	leftArrow.addEventListener("click", function() {
@@ -54,7 +56,9 @@ function Carousel(imageArray) {
 	}
 
 	function displayImg() {
-		activeImage.style.backgroundImage = "url('" + images[curImgIndex].url + "')";
+		var curImg = images[curImgIndex];
+		activeImage.style.backgroundImage = "url('" + curImg.url + "')";
+		caption.innerHTML = curImg.caption;
 	}
 
 	function setActiveTile(imageIndex) {

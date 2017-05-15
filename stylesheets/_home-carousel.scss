@@ -3,7 +3,9 @@
 	margin: 0 auto;
 	width: 90%;
 	max-width: 800px;
-	height: 500px;
+	height: 70vw;
+	min-height: 300px;
+	max-height: 500px;
 }
 
 .home-carousel__active-image {
@@ -42,6 +44,21 @@
 .home-carousel__arrow-left {
 	left: 0;
 	background-image: url('/assets/images/home-carousel/left_arrow_blue.svg');
+}
+
+.home-carousel__caption {
+	color: black;
+	position: absolute;
+	left: 50%;
+	top: 0;
+	transform: translate(-50%, 0);
+	font-family: 'Poppins', sans-serif;
+	font-size: 1em;
+	transition: all 0.15s ease-out;
+
+	&:hover {
+		transform: scale(1.2, 1.2) translate(-40%, 0);
+	}
 }
 
 .home-carousel__tile-nav {

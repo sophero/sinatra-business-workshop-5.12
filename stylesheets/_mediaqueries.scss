@@ -25,4 +25,8 @@
     // max-height: $hamburger-height;
     max-width: $hamburger-width;
   }
+
+  .home-carousel__active-image {
+  	background-position: right;
+  }
 }
