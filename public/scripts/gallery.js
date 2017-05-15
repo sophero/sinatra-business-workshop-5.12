@@ -2,36 +2,44 @@
 
 var gallery = document.getElementsByClassName("gallery");
 var modalContainer = document.getElementById("modal-container");
-var galleryModal = document.getElementById("galleryDiv");
+var galleryModal = document.getElementById("modal-image");
 var currentPhoto = 0;
 var currentGallery = 0;
 
 // ----------Event Handlers----------
 
-galleryModal.addEventListener("click", gallery);
-
-for (let i=0; i < gallery.length; i++) {
-	gallery[i].addEventListener("click", function() {
-	galleryDisplay(i);
-	});
+window.onload = function() {
+	setTimeout(gallerySelector, 0);
 };
+
+function gallerySelector() {
+	for (let i=0; i < gallery.length; i++) {
+		gallery[i].addEventListener("click", function() {
+		galleryDisplay(i);
+		});
+	};
+};
+
+galleryModal.addEventListener("click", galleryScroll);
 
 // ----------Event Handler Methods----------
 
 function galleryDisplay(i) {
 	modalContainer.style.display = "block";
-	galleryModal.style.backgroundImage = "url('" + masterGallery.gallery[i].album[currentPhoto].fileName + "')";
+	galleryModal.src = this.masterGallery.gallery[i].album[currentPhoto].fileName;
 }
 
-function gallery() {
-	if (currentPhoto === masterGallery.gallery[i].album.length -1) {
-		currentPhoto = 0
-		galleryDisplay()
+function galleryScroll() {
+	for(var i=0; i < gallery.length; i++) {
+		if (currentPhoto === masterGallery.gallery[i].album.length -1) {
+			currentPhoto = 0;
+			galleryDisplay()
 	}
 	
 	else {
 		currentPhoto += 1
 		galleryDisplay()
+		}
 	}
 }
 
