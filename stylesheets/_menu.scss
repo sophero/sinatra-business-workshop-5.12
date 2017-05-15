@@ -25,26 +25,32 @@
   }
 }
 .hamburger-move-content{
+  animation: maincontent 2s;
   margin: 0;
   right:25%;
   position: fixed;
   top: 60px;
+
 }
 
 .hamburger-show-menu{
 
+animation:menu 2s;
+
+margin: 0;
+   padding: 0;
+   width: 25%;
+   position: fixed;
+   height: 100%;
+   overflow: auto;
+   right: 5px;
+   float: none;
+   text-align: right;
+
+
   .nav-total{
   height: 42.5px;}
-  margin: 0;
-  padding: 0;
-  width: 25%;
-  position: fixed;
-  height: 100%;
-  overflow: auto;
-  right: 5px;
-  float: none;
-  text-align: right;
-  
+
   .nav-bar{
     top: 10%;
   }

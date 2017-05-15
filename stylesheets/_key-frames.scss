@@ -1,0 +1,38 @@
+@keyframes maincontent {
+    0%   {
+        margin: auto;
+        right: 0;
+        position: fixed;
+        top: 0;
+    }
+    100% {
+        margin: 0;
+        right:25%;
+        position: fixed;
+        top: 60px;
+      }
+}
+
+@keyframes menu {
+    0%   {
+         margin: 0;
+         padding: 0;
+         width: 0;
+         position: fixed;
+         height: auto;
+         overflow: auto;
+         right: 0;
+         float: right;
+         text-align: right;
+    }
+    100% {
+      margin: 0;
+      padding: 0;
+      width: 25%;
+      position: fixed;
+      height: 100%;
+      overflow: auto;
+      right: 5px;
+      float: none;
+      text-align: right;}
+}
